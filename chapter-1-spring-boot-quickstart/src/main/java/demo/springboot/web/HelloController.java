@@ -16,6 +16,10 @@ public class HelloController {
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     @ResponseBody
     public String sayHello() {
+        System.out.println("请求进来后打印日志！");
+        System.out.println("请求进来后打印日志2！");
+//        System.out.println("请求进来后打印日志3！");
+//        System.out.println("请求进来后打印日志4！");
         return "Hello，Spring Boot！";
     }
 }
